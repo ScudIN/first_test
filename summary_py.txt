@@ -1,0 +1,110 @@
+[summary Py]
+
+자료형
+숫자 : 1, 0, -100
+문자 : "문자", '문자'
+불리안 : True, False
+
+변수 선언
+age = 7
+***변수는 숫자로 시작할 수 없음(ex : 2name)
+
+형 변환
+int(float('3.14'))
+str(3.14)
+
+비교 연산
+A 는 B 보다 크거나 같고, C 는 D 보다 작거나 같다
+A >= B and C <= D
+
+불리안 표현
+print(3 > 5) # False
+print(bool(None)) # False
+print(bool('False')) # True
+
+문자 길이
+regret = '텍스트'
+len(regret)
+
+대소문자 전환
+text = "hELLO? lET ME INTRODUCE MYSELF."
+swapcase(text)
+
+문자열 메소드
+- 특정 문자로 시작하는지 확인
+startswith()
+- 불필요한 공백 제거
+strip()
+- 단어 대체
+replace()
+- 특정 단어 위치 확인
+find()
+
+문자열 표현 # 빨가면 사과 맛있으면 바나나
+apple = '사과'
+banana = '바나나'
+print('빨가면 {} 맛있으면 {}'.format(apple, banana))
+print('빨가면', apple, '맛있으면', banana)
+print('빨가면 {1} 맛있으면 {0}'.format(banana, apple))
+print(f'빨가면 {apple} 맛있으면 {banana}')
+
+문자열 표현 # 줄바꿈
+＼n
+
+리스트
+langs = ['파이썬', '자바']
+langs.append('C#')
+print(langs) # ['파이썬', '자바', 'C#']
+
+튜플
+소괄호를 통해 선언
+한 번 생성되면 추가, 삭제, 수정 불가능
+슬라이싱은 가능
+
+튜플 언패킹
+fruits = ('apple', 'banana', 'orange', 'grape')
+(mine, *yours) = fruits
+print(yours) # ['banana', 'orange', 'grape']
+
+세트
+set1 = {1, 2, 3, 4, 5}
+set2  = {3, 4, 4, 5, 6, 7}
+print(set1.intersection(set2)) # {3, 4, 5}
+- 특정 값 삭제(특정 값 없을 경우 에러 O)
+remove()
+- 특정 값 삭제(특정 값 없을 경우 에러 X)
+discard()
+- 모든 값 삭제
+clear()
+
+사전
+dictionary = {key1:value1, key2:value2, ...}
+
+반복문
+for num in range(10):
+ print(f'죽&음료 쿠폰 (입장 번호 : {num+1})')
+
+반복문
+i = 3
+while <= 5:
+ print(i)
+ i += 1 ### 3, 4, 5
+
+반복문
+for x in range(10):
+ if x % 2 == 1:
+  countinue
+ print(x) # 0, 2, 4, 6, 8
+
+리스트 + 반복문
+my_list = ['korea', 'English', 'france']
+new_list = [x.upper() for x in my_list if 'a' in x]
+print(new_list) # ['KOREA', 'FRANCE']
+
+사용자 입력 내장함수 
+dream = input('당신의 꿈은 무엇인가요?')
+
+파일 드라이브
+with open (...) as f:
+
+
